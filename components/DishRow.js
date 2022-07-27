@@ -48,7 +48,7 @@ const DishRow = ({ id, name, description, price, image }) => {
 				</View>
 			</TouchableOpacity>
 
-			{isPressed && (
+			{(isPressed || items.length > 0) && (
 				<View className='bg-white px-4'>
 					<View className='flex-row items-center space-x-4 pb-3'>
 						<TouchableOpacity
